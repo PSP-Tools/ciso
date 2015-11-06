@@ -1,0 +1,17 @@
+to build ciso
+install zlib-devel and zlib1g-devel
+
+in Konsole type:
+
+gcc -o ciso ciso.c -lz
+
+ciso will be created warnings are OK if there is no errors
+to make ciso executable type:
+
+chmod a+x ciso
+
+copy ciso to path eg. "/usr/local/bin" 
+
+Usage: ciso level infile outfile
+  level: 1-9 compress ISO to CSO (1=fast/large - 9=small/slow
+         0   decompress CSO to ISO
